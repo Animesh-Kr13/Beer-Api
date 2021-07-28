@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>Punk Beer API</h1>
+            Punk API Beer App
         </header>
-        <div>
-            <div cla></div>
+        <div class="filters">
+            <div class="card filter-card">
+                <div class="filter-container">
+                    <div class="filter-text">
+                        <p>Alcohol Vol (ABV):</p>
+                    </div>
+                    <div class="filter"> 
+                        <form id="filterABV">
+                            <select class="box">
+                                <option value="all">All</option>
+                                <option value="weak">Below 4.6%</option>
+                                <option value ="medium">Between 4.5% and 7.5% </option>
+                                <option value="strong">Above 7.6%</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card filter-card">
+                <div class="filter-container">
+                    <div class="filter-text">
+                        <p>Hoppiness (IBU):</p>
+                    </div>
+                    <div class="filter"> 
+                        <form id="filterIBU">
+                            <select class="box">
+                                <option value="all">All</option>
+                                <option value="weak">Below 35</option>
+                                <option value="medium">Between 34 and 75</option>
+                                <option value="strong">Above 74</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card filter-card">
+                <div class="filter-container">
+                    <div class="filter-text">
+                        <p>Page: <span id="text-content"></span></p>
+                    </div>
+                    <button id="previous-page"><span class="material-icons">navigate_before</span></button>
+                    <button id="next-page"><span class="material-icons">navigate_next</span></button>
+                </div>
+            </div>
 
 
-            <div></div>
         </div>
+
+        <div class="beers"></div>
+        <script src="index.js"></script>
     </body>
 </html>
