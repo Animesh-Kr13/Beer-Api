@@ -50,6 +50,10 @@ header {
     margin: 0.5rem 2rem;
 }
 
+.filter-text{
+    font-weight: 700;
+}
+
 .filter-container {
     padding: .4rem .8rem;
 }
